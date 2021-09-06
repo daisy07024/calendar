@@ -150,21 +150,21 @@ var j=0;
 
     show : function (el) {
       // (C1) FETCH EXISTING DATA
-      alert( "sfdsfis ");
+     // alert( "sfdsfis ");
       ws.data = el.getElementsByClassName("dd")[0].innerHTML;
-      alert(ws.data + "is ");
+     // alert(ws.data + "is ");
       //localStorage.setItem("cal-" + cal.sMth + "-" + cal.sYear, JSON.stringify(ws.data));
     },
     cshow : function (el) {
       // (C1) FETCH EXISTING DATA
        let re = "2PM";
-   
+      alert("your schedule saved!!")
       var index=null;
       var iv=null;
-      alert( "sfdsfis ");
+      //alert( "sfdsfis ");
       ws.data = el.getElementsByClassName("ff")[0].innerHTML;
       //index = ws.data.search(re);
-      alert("find index" + index);
+      //alert("find index" + index);
       //  f(true) { re="2pm"; index = ws.data.search(re);if (iindex>1) iv="myname13";}
       //  else {re="3pm"; index = ws.data.search(re);if (index>1) iv="myname14";}
       if(ws.data.includes('1AM')) iv="myname0"
@@ -178,7 +178,7 @@ var j=0;
       if(ws.data.includes('9AM')) iv="myname8"
       if(ws.data.includes('10AM')) iv="myname9"
       if(ws.data.includes('11AM')) iv="myname10"
-      if(ws.data.includes('12AM')) iv="myname11"
+      if(ws.data.includes('12PM')) iv="myname11"
       if(ws.data.includes('1PM')) iv="myname12"
       if(ws.data.includes('2PM')) iv="myname13" //true
       if(ws.data.includes('3PM')) iv="myname14"
@@ -190,12 +190,12 @@ var j=0;
       if(ws.data.includes('9PM')) iv="myname20"
       if(ws.data.includes('10PM')) iv="myname21"
       if(ws.data.includes('11PM')) iv="myname22"
-      if(ws.data.includes('12PM')) iv="myname23"
+      if(ws.data.includes('12AM')) iv="myname23"
  
       // alert(iv + "iv value")
-      // alert(ws.data + "is ");
-      // alert(document.querySelector("input[name='"+iv+"']").value+ " 1229");
-      
+      //alert(key + "is ");
+       //alert(document.querySelector("input[name='"+iv+"']").value+ " inside the textbox");
+      //ws.data is the key
       localStorage.setItem(ws.data, document.querySelector("input[name='"+iv+"']").value);
       
   },
@@ -206,8 +206,8 @@ var j=0;
           evt.stopPropagation();
           evt.preventDefault();
          
-          alert(ws.s3vp.id);
-          alert(document.getElementById(ws.s3vp.id).value)
+          //alert(ws.s3vp.id);
+          //alert(document.getElementById(ws.s3vp.id).value)
           
 
   },
